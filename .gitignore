@@ -1,0 +1,23 @@
+# IDE and Server hidden files
+.cursor-server/
+.idea/
+.lightning_studio/
+.vscode-server/
+.vscode/
+.wget-hsts
+.windsurf-server/
+.vscode-server
+.cursor-server
+.windsurf-server
+# Datasets
+AerialImageDataset/
+*.zip
+
+# Training outputs, epochs, and results
+controlnet_xs_aerial_1/
+epoch_comparisons/
+*.json
+
+# Standard Python ignores (good practice)
+__pycache__/
+*.pyc
