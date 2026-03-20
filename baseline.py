@@ -67,7 +67,7 @@ def evaluate_baseline_img2img(pipeline, test_loader, device):
     print(f"\n--- Evaluating Img2Img Baseline (Strength: {CONFIG['img2img_strength']}) ---")
     
     # Initialize KID (subset_size=50 is standard for smaller datasets in torchmetrics)
-    global_kid = KernelInceptionDistance(subset_size=50).to(device)
+    global_kid = KernelInceptionDistance(subset_size=100).to(device)
     global_lpips = LearnedPerceptualImagePatchSimilarity(net_type='vgg').to(device)
     city_lpips_metrics = {}
     

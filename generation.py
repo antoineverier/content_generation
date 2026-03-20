@@ -10,7 +10,7 @@ from tqdm import tqdm
 # ==========================================
 CONFIG = {
     "base_model_id": "runwayml/stable-diffusion-v1-5",
-    "controlnet_path": "controlnet_xs_aerial_1/checkpoint-epoch-4", # Update to your best epoch
+    "controlnet_path": "controlnet_xs_aerial_1/checkpoint-epoch-3", # Update to your best epoch
     "input_mask_path": "AerialImageDataset/train/gt/austin1.tif",  # The 5000x5000 mask
     "output_image_path": "austin1_generated_seamless.png",
     "prompt": "Aerial satellite view of austin.",
